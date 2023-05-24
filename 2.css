@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+  background-color: #d1f1fd;
+}
+section1 {
+  flex: 1;
+  background: #d0f0fc;
+  height: 200px;
+}
+section2 {
+  flex: 1;
+  background: #eee3fe;
+  height: 200px;
+}
+#main > nav {
+  order: -1;
+  background-color: #bf8eff;
+  flex: 0 0 30vw;
+}
+footer {
+  background: #f0f0f0;
+  height: 20vh;
+}
+footer, article, nav, aside {
+  padding: 1em;
+}
+@media screen and (max-width: 575px) {
+  #main {
+    flex-direction: column;
+  }
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+/* Стиль ссылок шапки */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Стиль ссылки логотипа */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+#logo{
+  height: 50px;
+}
+
+/* Изменение цвета фона при наведении курсора */
+.header a:hover {
+  background-color: #d5d5d5;
+  color: black;
+}
+
+/* Стиль активной/текущей ссылки */
+.header a.active {
+  background-color: #9b4aff;
+  color: white;
+}
+
+/* Сдвигаем секцию со ссылками вправо */
+.header-right {
+  float: right;
+}
+
+/* Медиа-запрос для адаптивности – когда ширина
+  экрана 650px или меньше, ссылки будут друг над другом */
+@media screen and (max-width: 650px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+form{
+    width: 500px;
+  background-color: #efe4ff;
+}
+
+label{
+    display: block;
+    margin: 5px;
+}
+p{
+  font-size: 22px;
+  margin: 10px;
+  font-family: Arial Narrow, sans-serif;
+}
+h2{
+  font-family: Arial Narrow, sans-serif;
+  margin: 20px;
+  font-size: 30px;
+}
+li{
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-size: 20px;
+}
+#flow{
+  float:left; /* Выравнивание по левому краю */
+  margin: 35px 10px 20px 10px; /* Отступы вокруг картинки */
+  width: 250px;
+}
+#mod{
+  float: right; /* Выравнивание по правому краю  */
+  margin: 7px 30px 7px 7px; /* Отступы вокруг картинки */
+}
+#foot{
+
+}
